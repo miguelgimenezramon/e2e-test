@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="3.002587">
+    <testcase classname="Users are listed from highest score to lowest, and when" name="A user sends a higher number of right attempts and" time="1.284143">
+        <system-out>
+            <![CDATA[When the user john_snow sends 2 right attempts..............................passed
+And the user peter sends 1 right attempts...................................passed
+Then the user john_snow is the number 1 on the leaderboard..................passed
+And the user peter is the number 2 on the leaderboard.......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Users are listed from highest score to lowest, and when" name="A user passes another one when gets higher score." time="1.718444">
+        <system-out>
+            <![CDATA[Given the user john_snow sends 3 right attempts.............................passed
+And the user peter sends 2 right attempts...................................passed
+And the user john_snow is the number 1 on the leaderboard...................passed
+When the user peter sends 2 right attempts..................................passed
+Then the user peter is the number 1 on the leaderboard......................passed
+And the user john_snow is the number 2 on the leaderboard...................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
